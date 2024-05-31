@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body class="contact-container">
+    <h1>Admin Page</h1>
+    <form class="contact-left">
+            <input type="text" id="newUsername" placeholder="New Username" required>
+            <input type="password" id="newPassword" placeholder="New Password" required>
+            <button onclick="changeCredentials()">Change Credentials</button>
+    </form>
+
+
+    <style>
+    
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid #0000006e;
+  padding: 40px;
+  border-radius: 25px;
+}
+
+input {
+  width: 700px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: #c42828;
+  font-weight: 400;
+}
+
+input:active{
+    border: 3px solid #c42828;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+    </style>
+    <script src="admin.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
